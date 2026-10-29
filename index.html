@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan de contenido · Noviembre · MADEBYIZAN</title>
+<style>
+  :root{--red:#db4548;--black:#0b0b0b;--line:#2a2a2a;--card:#161616;--card2:#131313;--grey:#8a8a8a;--white:#f5f5f5;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter','Helvetica Neue',Arial,sans-serif;background:var(--black);color:var(--white);line-height:1.5;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px 90px;}
+  header{padding:52px 0 34px;border-bottom:1px solid var(--line);}
+  .tag{display:inline-block;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--red);font-weight:800;margin-bottom:16px;}
+  h1{font-size:clamp(32px,5.5vw,52px);line-height:1.02;font-weight:900;text-transform:uppercase;letter-spacing:-.01em;}
+  h1 .accent{color:var(--red);}
+  .meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px 26px;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--grey);}
+  .meta b{color:var(--white);font-weight:700;}
+  .strat{background:linear-gradient(135deg,#1a1a1a,#131313);border:1px solid var(--line);border-left:4px solid var(--red);padding:22px 24px;margin:26px 0 0;}
+  .strat h3{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--red);font-weight:800;margin-bottom:10px;}
+  .strat p{font-size:13.5px;color:#c2c2c2;max-width:760px;}
+  .strat p + p{margin-top:10px;}
+  .profiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;}
+  .profile{background:var(--card2);border:1px solid var(--line);padding:16px 18px;}
+  .profile .p-tag{font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:6px;}
+  .profile h4{font-size:15px;font-weight:800;margin-bottom:6px;}
+  .profile p{font-size:13px;color:#bdbdbd;}
+  .section-title{display:flex;align-items:center;gap:14px;margin:50px 0 8px;}
+  .section-title .num{font-size:12px;font-weight:900;color:var(--black);background:var(--red);padding:5px 10px;letter-spacing:.05em;}
+  .section-title h2{font-size:20px;text-transform:uppercase;letter-spacing:.02em;font-weight:800;}
+  .lead{color:var(--grey);font-size:13.5px;margin:0 0 22px;max-width:720px;}
+  .week{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--red);padding:22px 24px 24px;margin-bottom:16px;}
+  .week.bf{border-left-color:#fff;}
+  .week.apart{border-left:4px dashed var(--grey);background:var(--card2);}
+  .week-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:6px;}
+  .week-no{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--red);font-weight:800;}
+  .week.bf .week-no{color:#fff;}
+  .week.apart .week-no{color:var(--grey);}
+  .week-date{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--grey);}
+  .badges{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 14px;}
+  .badge{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:4px 9px;border-radius:2px;}
+  .badge.viral{background:var(--red);color:#fff;}
+  .badge.bfb{background:#fff;color:#0b0b0b;}
+  .badge.valor{background:rgba(255,255,255,.06);color:#d8d8d8;border:1px solid var(--line);}
+  .badge.low{background:rgba(219,69,72,.15);color:#ff6b63;border:1px solid rgba(219,69,72,.4);}
+  .badge.recy{background:rgba(255,255,255,.06);color:#8a8a8a;border:1px dashed var(--line);}
+  .week h3{font-size:20px;font-weight:900;line-height:1.15;margin-bottom:10px;}
+  .angle{font-size:14px;color:#cfcfcf;margin-bottom:6px;}
+  .pain{font-size:13px;color:var(--grey);margin-top:10px;}
+  .pain b{color:#e0e0e0;font-weight:700;}
+  .foot-row{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 24px;font-size:12px;align-items:center;}
+  .foot-row span{color:var(--grey);}
+  .foot-row b{color:var(--white);font-weight:700;}
+  .foot-row .cta-chip{color:#fff;}
+  .cta-chip{display:inline-block;background:var(--red);color:#fff;font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:.04em;padding:5px 11px;border-radius:2px;}
+  .notes{background:var(--card);border:1px solid var(--line);padding:20px 24px;}
+  .notes ul{list-style:none;}
+  .notes li{font-size:13.5px;color:#c9c9c9;padding:8px 0;border-bottom:1px solid var(--line);}
+  .notes li:last-child{border-bottom:none;}
+  .notes li b{color:var(--white);}
+  footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--grey);}
+  footer b{color:var(--red);}
+  @media (max-width:640px){.profiles{grid-template-columns:1fr;}.week{padding:20px 18px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="tag">Newsletter · Plan de contenido</span>
+    <h1>Noviembre en <span class="accent">MADEBYIZAN</span></h1>
+    <div class="meta">
+      <span>Audiencia · <b>B2C · Assets</b></span>
+      <span>Mes · <b>Noviembre 2026</b></span>
+      <span>Ritmo · <b>1 email/semana + Black Friday</b></span>
+      <span>Gestión · <b>Navy Marketing</b></span>
+    </div>
+    <div class="strat">
+      <h3>Estrategia del mes</h3>
+      <p>Noviembre tiene dos fases. Del 3 al 24 <b>calentamos</b> la lista con emails de valor que meten un producto de forma sutil, cada uno atacando un dolor concreto. Del 27 al 30 <b>convertimos</b> con Black Friday, con descuentos reales y foco en los assets de IA, que es lo que mejor está funcionando.</p>
+      <p>Los emails de valor van de barato a caro (guía, plugin, bundles), para que cada producto llegue a Black Friday ya presentado. Y en vez de hablarle a "un diseñador" genérico, cada email le habla a uno de los dos perfiles que compran en la tienda:</p>
+      <div class="profiles">
+        <div class="profile">
+          <div class="p-tag">Perfil A</div>
+          <h4>Diseñador freelance</h4>
+          <p>Cobra poco y de forma irregular, y ve cómo otros con peor diseño facturan más porque presentan mejor. Compra para parecer más pro y poder cobrar más.</p>
+        </div>
+        <div class="profile">
+          <div class="p-tag">Perfil B</div>
+          <h4>Dueño de marca emergente</h4>
+          <p>Su problema no es diseñar: son las muestras, las sesiones de fotos y el miedo a fabricar algo que no se venda. Compra para ahorrar y validar antes de producir.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="section-title"><span class="num">01</span><h2>Calentar · 3–17 Nov</h2></div>
+  <p class="lead">Envío los martes. Un dolor, un perfil y un producto por email.</p>
+
+  <div class="week">
+    <div class="week-head"><span class="week-no">Semana 01</span><span class="week-date">Martes 3 Nov</span></div>
+    <div class="badges"><span class="badge valor">Personal · Texto de Izan</span><span class="badge low">Low ticket</span><span class="badge recy">Perfil A · Empezando</span></div>
+    <h3>"Lo que compraría con 20 € si empezara de cero"</h3>
+    <p class="angle">Email en texto plano, como si Izan escribiera a un colega. Cuenta qué haría hoy si tuviera 18 años y ningún presupuesto, y por qué lo único que compraría es la guía de IA para convertir diseños en imágenes realistas.</p>
+    <p class="pain">Dolor · <b>"Ya pagué un curso y no me sirvió". Desconfianza y poco presupuesto.</b></p>
+    <div class="foot-row"><span>Producto · <b>Turn Your Designs to Life with AI (19,99 €)</b></span><span>Objetivo · <b>Primer "sí" pequeño</b></span><span class="cta-chip">Get the guide</span></div>
+  </div>
+
+  <div class="week">
+    <div class="week-head"><span class="week-no">Semana 02</span><span class="week-date">Martes 10 Nov</span></div>
+    <div class="badges"><span class="badge valor">Educativo · Las cuentas</span><span class="badge low">Mid ticket</span><span class="badge recy">Perfil B · Marca</span></div>
+    <h3>"La sesión de fotos de 0,04 $"</h3>
+    <p class="angle">Comparamos lo que cuesta sacar fotos de producto a la antigua (muestras, estudio y retoque, unos 2.690 $) con lo que cuesta hacerlo con Mockup Heaven: 49,99 € una vez y unos céntimos por imagen. Email visual con las cifras lado a lado.</p>
+    <p class="pain">Dolor · <b>Pagar muestras y sesiones de fotos por prendas que quizá nunca se vendan.</b></p>
+    <div class="foot-row"><span>Producto · <b>Mockup Heaven (49,99 €)</b></span><span>Objetivo · <b>Educar + venta</b></span><span class="cta-chip">Get Mockup Heaven</span></div>
+  </div>
+
+  <div class="week">
+    <div class="week-head"><span class="week-no">Semana 03</span><span class="week-date">Martes 17 Nov</span></div>
+    <div class="badges"><span class="badge viral">Hot take</span><span class="badge low">Mid ticket</span><span class="badge recy">Perfil A · Ya diseña</span></div>
+    <h3>"No cobras poco por cómo diseñas. Cobras poco por cómo te posicionas"</h3>
+    <p class="angle">El precio no lo marca el talento, lo marca cómo te perciben. Dos diseñadores con el mismo nivel cobran muy distinto según cómo presentan su trabajo: el que enseña la prenda como si ya existiera se posiciona como pro y puede cobrar más. Antes/después con el mismo diseño presentado en plano y presentado como producto real.</p>
+    <p class="pain">Dolor · <b>Ver que otros que diseñan peor facturan más porque se posicionan mejor.</b></p>
+    <div class="foot-row"><span>Producto · <b>Mockup Heaven + Ultimate Bundle</b></span><span>Objetivo · <b>Cambio de mentalidad + venta</b></span><span class="cta-chip">Level up your presentation</span></div>
+  </div>
+
+  <div class="section-title"><span class="num">02</span><h2>Preparar Black Friday · 24 Nov</h2></div>
+  <p class="lead">Anunciamos Black Friday y, de paso, descubrimos qué perfil es cada suscriptor.</p>
+
+  <div class="week">
+    <div class="week-head"><span class="week-no">Semana 04</span><span class="week-date">Martes 24 Nov</span></div>
+    <div class="badges"><span class="badge valor">Teaser · Texto plano</span><span class="badge recy">Sin venta</span><span class="badge recy">Todos</span></div>
+    <h3>"Black Friday empieza el viernes. Antes, una pregunta"</h3>
+    <p class="angle">Avisamos de qué entra en Black Friday y cuándo empieza, y preguntamos con dos botones: "Diseño para otros" o "Estoy creando mi propia marca". Con un solo clic sabemos si cada persona es perfil A o B, y en Black Friday le hablamos a cada uno con lo que le duele.</p>
+    <div class="foot-row"><span>Producto · <b>Ninguno</b></span><span>Objetivo · <b>Anticipar + segmentar</b></span><span class="cta-chip">I design for others</span><span class="cta-chip">I'm building my brand</span></div>
+  </div>
+
+  <div class="section-title"><span class="num">03</span><h2>Black Friday · 27–30 Nov</h2></div>
+  <p class="lead">4 días de descuentos reales con foco en la IA. El descuento termina de verdad el lunes 30 a las 23:59.</p>
+
+  <div class="week bf">
+    <div class="week-head"><span class="week-no">BF · Día 1</span><span class="week-date">Viernes 27 Nov</span></div>
+    <div class="badges"><span class="badge bfb">Lanzamiento</span><span class="badge recy">Todos</span></div>
+    <h3>"Las herramientas sin las que no trabajo. Ahora en oferta"</h3>
+    <p class="angle">Arranca Black Friday. Mockup Heaven y la guía de IA son las protagonistas, con los 4 productos visibles y el descuento muy claro desde el primer vistazo.</p>
+    <div class="foot-row"><span>Producto · <b>Los 4, foco en IA</b></span><span>Objetivo · <b>Venta</b></span><span class="cta-chip">Shop Black Friday</span></div>
+  </div>
+
+  <div class="week bf">
+    <div class="week-head"><span class="week-no">BF · Día 2</span><span class="week-date">Sábado 28 Nov</span></div>
+    <div class="badges"><span class="badge bfb">Lo que consigues</span><span class="badge recy">Todos</span></div>
+    <h3>"Lo que puedes conseguir este finde por muy poco"</h3>
+    <p class="angle">Email en positivo, centrado en resultados y no en productos. Cada uno se presenta por lo que te permite hacer desde hoy: ver tus diseños como fotos reales (guía), tener fotos de producto sin muestras ni sesión (Mockup Heaven), darle a tus diseños un detalle de nivel pro (Ultimate) o tenerlo todo para siempre (Master). Y todo a un precio que no se va a repetir.</p>
+    <div class="foot-row"><span>Producto · <b>Los 4, por resultado</b></span><span>Objetivo · <b>Venta + deseo</b></span><span class="cta-chip">See what you can get</span></div>
+  </div>
+
+  <div class="week bf">
+    <div class="week-head"><span class="week-no">BF · Día 3</span><span class="week-date">Domingo 29 Nov</span></div>
+    <div class="badges"><span class="badge bfb">Producto estrella</span><span class="badge recy">2 versiones · A y B</span></div>
+    <h3>"Todo, una sola vez"</h3>
+    <p class="angle">El Master Bundle como la mejor compra del año: todo el catálogo, los workflows de IA y actualizaciones de por vida. Dos versiones según el perfil: al freelance le hablamos de cobrar como un pro y al dueño de marca, de lanzar sin muestras ni sesiones de fotos.</p>
+    <div class="foot-row"><span>Producto · <b>Master Bundle</b></span><span>Objetivo · <b>Venta ticket alto</b></span><span class="cta-chip">Get everything</span></div>
+  </div>
+
+  <div class="week bf">
+    <div class="week-head"><span class="week-no">BF · Día 4</span><span class="week-date">Lunes 30 Nov · tarde</span></div>
+    <div class="badges"><span class="badge bfb">Last call</span><span class="badge recy">Todos</span></div>
+    <h3>"Acaba esta noche"</h3>
+    <p class="angle">Email corto y directo: el descuento se acaba a medianoche. Recordamos los 4 productos con el foco puesto en la IA.</p>
+    <div class="foot-row"><span>Producto · <b>Los 4, foco en IA</b></span><span>Objetivo · <b>Cierre</b></span><span class="cta-chip">Last chance</span></div>
+  </div>
+
+  <div class="section-title"><span class="num">04</span><h2>Aparte · Comunidad</h2></div>
+  <p class="lead">Sin fecha fija: sale en cuanto esté creado el canal de WhatsApp.</p>
+
+  <div class="week apart">
+    <div class="week-head"><span class="week-no">Email comunidad</span><span class="week-date">Sin fecha · mejor en jueves</span></div>
+    <div class="badges"><span class="badge valor">Comunidad</span><span class="badge recy">Sin venta</span></div>
+    <h3>Únete al canal de WhatsApp</h3>
+    <p class="angle">Invitamos a la lista al canal de WhatsApp para empezar a nutrirla antes del lanzamiento en Skool: tips cortos, behind the scenes y novedades antes que nadie. Si sale antes del 27, el gancho es el acceso anticipado a Black Friday.</p>
+    <div class="foot-row"><span>Destino · <b>Canal de WhatsApp</b></span><span>Objetivo · <b>Comunidad + nutrir</b></span><span class="cta-chip">Join the channel</span></div>
+  </div>
+
+  <div class="section-title"><span class="num">05</span><h2>Notas</h2></div>
+  <div class="notes">
+    <ul>
+      <li><b>Material que necesitamos:</b> capturas reales de Mockup Heaven (10 Nov) y un antes/después de presentación, en plano frente a producto real (17 Nov).</li>
+      <li><b>Black Friday por definir:</b> % de descuento por producto y si el Master Bundle incluye Mockup Heaven (si lo incluye, es el argumento principal del día 29).</li>
+      <li><b>Envíos en BF:</b> el lanzamiento y el last call van a toda la lista; el sábado y el domingo, solo a los suscriptores activos. Quien compre sale del resto de la secuencia.</li>
+      <li><b>Canal de WhatsApp:</b> en cuanto esté creado, nos pasáis el enlace y lo enviamos.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <span>MADEBYIZAN · Designs to life</span>
+    <span>Plan de contenido · Noviembre 2026 · <b>Navy Marketing</b></span>
+  </footer>
+
+</div>
+</body>
+</html>
